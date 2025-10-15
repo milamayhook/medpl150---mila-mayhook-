@@ -6,11 +6,11 @@
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 
-.sidenav {
+.sidebar {
   height: 100%;
   width: 200px;
   position: fixed;
@@ -22,19 +22,62 @@ body {
 }
 
 
-.sidenav a {
+.sidebar .text {
   color: white;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
   padding: 16px;
   text-decoration: none;
   display: block;
 }
 
 
-.sidenav a:hover {
-  background-color: #ddd;
-  color: black;
+nav ul {
+  background: black;
+  height: 100%;
+  width: 100%;
+  list-style: none; 
 }
 
+nav ul li {
+  line-height: 60px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav ul li a {
+  color: white; 
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+
+nav ul li a:hover{
+  color: red; 
+  background: #1e1e1e;
+  border-left-color: red;
+}
+
+nav ul ul {
+position: static; 
+  display: none;
+}
+
+nav ul ul li {
+  line-height: 42px;
+  border-bottom: none;
+}
+
+nav ul ul li a {
+  font-size: 17px;
+  color: #e6e6e6;
+  padding-left: 80px
+}
 
 .content {
   margin-left: 200px;
