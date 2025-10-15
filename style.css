@@ -17,7 +17,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #FF6347;
   overflow-x: hidden;
 }
 
@@ -35,7 +35,7 @@ body {
 
 
 nav ul {
-  background: black;
+  background: #FF6347;
   height: 100%;
   width: 100%;
   list-style: none; 
@@ -58,9 +58,9 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-  color: red; 
-  background: #1e1e1e;
-  border-left-color: red;
+  color: orange; 
+  background: #FF6347;
+  border-left-color: orange;
 }
 
 nav ul ul {
