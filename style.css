@@ -10,6 +10,7 @@ body {
   background: url("website_background1.jpg") 
   background-repeat: repeat;
   background-size: cover;
+  cursor: url("cursor.cur"), auto;
 
 
 }
