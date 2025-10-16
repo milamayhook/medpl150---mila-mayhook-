@@ -75,12 +75,12 @@ header span {
   backdrop-filter: blur(1px);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  display: block;
   width: 250px;
   padding: 8px 11px 14px 11px;
   overflow: auto;
 	height:100vh;
 	position: fixed;
+	top: 0;
 }
 
 .sidebar .text {
