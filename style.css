@@ -78,6 +78,15 @@ position: static;
   display: none;
 }
 
+nav ul .hw2-show.show{
+  display: block; }
+
+nav ul .hw3-show.show{
+  display: block; }
+
+nav ul .hw4-show.show{
+  display: block; }
+
 nav ul ul li {
   line-height: 42px;
   border-bottom: none;
