@@ -5,7 +5,6 @@
 }
 
 body {
-  min-height: 100vh; 
   margin: 0;
   font-family: "Segoe UI Semilight", Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif;
   background: white; 
@@ -13,6 +12,8 @@ body {
   background-size: cover;
   display: flex; 
   cursor: url("cursor.cur"), auto;
+  height: 100vh; 
+  flex-direction: row;
 }
 
 
@@ -135,8 +136,12 @@ nav ul li a span.rotate {
 
 .content {
   padding: 20px;
-  flex-grow: 1; /* Ensures content grows to fill remaining space */
-  margin-left: 250px; /* Space for sidebar */
+  flex-grow: 1; 
+  margin-left: 250px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start;
+  height: 100%;
 }
 
 .content h1 {
