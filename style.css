@@ -11,7 +11,7 @@ body {
   background-size: 20px 35px;
   display: flex; 
   cursor: url("cursor.cur"), auto;
-  height: 100vh; 
+  height: auto; 
 	overflow: auto;
   flex-direction: row;
 padding: 10px;
@@ -178,12 +178,11 @@ nav ul li a span.rotate {
 .content {
   padding: 20px;
   flex-grow: 1; 
-  margin-left: 100
-     px; 
+  margin-left: 100px; 
   display: flex; 
   flex-direction: column; 
   justify-content: flex-start;
-	height: 100vh;
+	height: auto;
 	overflow-y:auto;
 }
 
