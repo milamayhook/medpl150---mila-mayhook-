@@ -55,6 +55,10 @@ nav ul li {
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
+nav ul li:last-child{
+  border-bottom: 1px transparent;
+}
+
 nav ul li a {
   position: relative; 
   color: white; 
@@ -67,10 +71,16 @@ nav ul li a {
   border-left: 3px solid transparent;
 }
 
-nav ul li a.active{
+nav ul li a.active ul li a {
   color: orange; 
   background: #FF6347;
   border-left-color: orange;
+}
+
+nav ul ul li a:hover{
+  color: orange!important;
+  background: #FF6347!important;
+  
 }
 
 nav ul ul {
