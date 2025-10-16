@@ -16,17 +16,17 @@
       <div class = "text">Index</div>
    <ul>
      <li><a href="reflections.html">Reflections</a></li>
-     <li><button class = "hw2-btn">Homework 2
+     <li><a href="#" class = "hw2-btn">Homework 2
        <span class = "fas fa-caret-down first"></span>
-     </button>
+     </a>
      <ul class="hw2-show">
        <li><a href="homework2-image1.html">Homework 2 Image 1</a></li>
           <li><a href="homework2-image2.html">Homework 2 Image 2</a></li>
      </ul>
      </li>
-     <li><button class = "hw3-btn"> Homework 3 
+     <li><a href="#" class = "hw3-btn"> Homework 3 
         <span class = "fas fa-caret-down second"></span>
-     </button>
+     </a>
        <ul class="hw3-show">
       <li><a href="hw3_image1.html">Homework 3 Image 1</a></li>
      <li><a href="hw3_image2.html">Homework 3 Image 2</a></li>
@@ -35,9 +35,9 @@
      <li><a href="hw3_image5.html">Homework 3 Image 5</a></li>
     </ul>
      </li>
-  <li> <button class = "hw4-btn"> Homework 4
+  <li> <a href="#" class = "hw4-btn"> Homework 4
    <span class = "fas fa-caret-down third"></span>
-  </button>
+  </a>
     <ul class = "hw4-show">
       <li><a href="hw4_image1.html">Homework 4 Image 1</a></li>
       <li><a href="hw4_image2.html">Homework 4 Image 2</a></li>
@@ -47,16 +47,22 @@
         </nav>
 
     <script>
-      $('.hw2-btn').click(function(){$('nav ul .hw2-show').toggleClass("show");
-                                     $('nav ul .first').toggleClass("rotate");
-                                    });
+      $('.hw2-btn').click(function(event){
+        event.preventDefault(); 
+        $('nav ul .hw2-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+          });
       
-       $('.hw3-btn').click(function(){$('nav ul .hw3-show').toggleClass("show");
-                                       $('nav ul .second').toggleClass("rotate");
-                                    });
-       $('.hw4-btn').click(function(){$('nav ul .hw4-show').toggleClass("show");
-                                       $('nav ul .third').toggleClass("rotate");
-                                    });
+       $('.hw3-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw3-show').toggleClass("show");
+          $('nav ul .second').toggleClass("rotate");
+           });
+       $('.hw4-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw4-show').toggleClass("show");
+          $('nav ul .third').toggleClass("rotate");
+            });
 
       $('nav ul li').click(function(){
       $(this).addClass("active").siblings().removeClass("active");
