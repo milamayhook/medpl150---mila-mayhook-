@@ -5,6 +5,7 @@
 }
 
 body {
+  min-height: 100vh; 
   margin: 0;
   font-family: "Segoe UI Semilight", Tahoma, Geneva, Verdana, Arial, Helvetica, sans-serif;
   background: white; 
