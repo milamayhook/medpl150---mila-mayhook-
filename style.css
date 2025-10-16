@@ -82,6 +82,7 @@ header span {
   overflow: auto;
 	height:100vh;
 	position: sticky;
+	flex-shrink:0;
 }
 
 .sidebar .text {
