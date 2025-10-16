@@ -9,11 +9,47 @@
   </head>
 
   <body>
+      <div id="container">
+         <nav class = "sidebar" >
+      <div class = "text">Index</div>
+   <ul>
+     <li><a href="reflections.html">Reflections</a></li>
+     <li><a href="#" class = "hw2-btn">Homework 2
+       <span class = "fas fa-caret-down first"></span>
+     </a>
+     <ul class="hw2-show">
+       <li><a href="homework2-image1.html">Image 1</a></li>
+          <li><a href="homework2-image2.html">Image 2</a></li>
+     </ul>
+     </li>
+     <li><a href="#" class = "hw3-btn"> Homework 3 
+        <span class = "fas fa-caret-down second"></span>
+     </a>
+       <ul class="hw3-show">
+      <li><a href="hw3_image1.html">Image 1</a></li>
+     <li><a href="hw3_image2.html">Image 2</a></li>
+     <li><a href="hw3_image3.html">Image 3</a></li>
+     <li><a href="hw3_image4.html">Image 4</a></li>
+     <li><a href="hw3_image5.html">Image 5</a></li>
+    </ul>
+     </li>
+  <li> <a href="#" class = "hw4-btn"> Homework 4
+   <span class = "fas fa-caret-down third"></span>
+  </a>
+    <ul class = "hw4-show">
+      <li><a href="hw4_image1.html">Image 1</a></li>
+      <li><a href="hw4_image2.html">Image 2</a></li>
+    </ul>
+  </li>
+   </ul>
+        </nav>
 
-    <h1>Homework 3 Image 2</h1>
+         <main class="content">
+    <header>
+       <span>Homework 3 Image 2</span>
+         </header>
 
-    <p> This image demonstrates a shallow depth of field. 
-</p>
+    <p>This image demonstrates a shallow depth of field. </p>
 
     <img src="hw3_image2.jpg" alt="Homework 3 Image 2" width="600">
 
@@ -21,7 +57,30 @@
 
     <a href="index.html">Back to Home</a>
     <br>
-       <a href="hw3_image3.html">Next Image...</a>
+       <a href="hw3_image3.html">Image 3</a>
+         
+         <script>
+      $('.hw2-btn').click(function(event){
+        event.preventDefault(); 
+        $('nav ul .hw2-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+          });
+      
+       $('.hw3-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw3-show').toggleClass("show");
+          $('nav ul .second').toggleClass("rotate");
+           });
+       $('.hw4-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw4-show').toggleClass("show");
+          $('nav ul .third').toggleClass("rotate");
+            });
+
+      $('nav ul li').click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
 
   </body>
 
