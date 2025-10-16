@@ -11,18 +11,15 @@ body {
   background: white; 
   background-repeat: repeat;
   background-size: cover;
+  display: flex; 
   cursor: url("cursor.cur"), auto;
 }
 
 
-.container {
-  width: 80%;
-  max-height: 917px;
-  margin: auto;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 700px;
-  background-color: white;
+#container {
+  display: flex;
+  width: 100%;
+  height: 100%; 
 }
 
 
@@ -40,9 +37,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   display: block;
-  height: 763px;
-  min-width: 122px;
-  max-width: 250px;
+  width: 250px;
   padding: 8px 11px 14px 11px;
   overflow: auto;
 }
@@ -139,8 +134,14 @@ nav ul li a span.rotate {
 }
 
 .content {
-  margin-left: 300px;
-  padding-left: 20px;
+  padding: 20px;
+  flex-grow: 1; /* Ensures content grows to fill remaining space */
+  margin-left: 250px; /* Space for sidebar */
+}
+
+.content h1 {
+  color: blue;
+  text-align: center;
 }
 
 
