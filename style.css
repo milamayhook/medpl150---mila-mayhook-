@@ -21,6 +21,7 @@ padding: 10px;
 
 #container {
   display: flex;
+	flex-grow: 1;
   width: 60rem;
   height: 80%; 
    padding:5px;
@@ -87,6 +88,7 @@ header span {
   padding: 8px 11px 14px 11px;
   overflow: auto;
 	height:100vh;
+	position: fixed;
 }
 
 .sidebar .text {
