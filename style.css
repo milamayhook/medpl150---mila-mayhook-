@@ -12,6 +12,7 @@ body {
   display: flex; 
   cursor: url("cursor.cur"), auto;
   height: 100vh; 
+	overflow: hidden;
   flex-direction: row;
 padding: 10px;
    background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px; 
@@ -30,6 +31,7 @@ padding: 10px;
    outline-offset: 4px;
    border-radius:10px;
    background: white;
+	overflow: hidden;
 
    .small { flex: 1 1 9%; }
 .large { flex: 1 1 82%; }
@@ -84,6 +86,7 @@ header span {
   width: 700px;
   padding: 8px 11px 14px 11px;
   overflow: auto;
+	height: 100%;
 }
 
 .sidebar .text {
@@ -186,6 +189,7 @@ nav ul li a span.rotate {
   flex-direction: column; 
   justify-content: flex-start;
   height: 100%;
+	overflow-y:auto;
 }
 
 .content h1 {
