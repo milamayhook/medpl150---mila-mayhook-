@@ -21,6 +21,7 @@ padding: 10px;
 
 #container {
   display: flex;
+	flex-direction: row;
   width: 100%;
   height: 80%; 
    padding:5px;
@@ -30,6 +31,7 @@ padding: 10px;
    border-radius:10px;
    background: white;
 	overflow: hidden;
+	margin: 0;
 
 }
 
@@ -75,12 +77,11 @@ header span {
   backdrop-filter: blur(1px);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  width: 250px;
+  width: 400px;
   padding: 8px 11px 14px 11px;
   overflow: auto;
 	height:100vh;
-	position: fixed;
-	top: 0;
+	position: sticky;
 }
 
 .sidebar .text {
