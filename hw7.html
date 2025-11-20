@@ -60,4 +60,49 @@
       
         </nav>
 
+      <main class="content">
+    <header>
+       <span>Homework 7</span>
+         </header>
+
+    <p> This is my illustrated environment. I chose this image of a Grecian church from wikimedia commons due to its beautiful simplicity. I felt like its geometry would make it well-suited for a transformation in illustrator. I used the pen tool to map the entire church and the land and the sky surrounding it. I used a slight gradient to color the shadows and then applied the "grain" and "mosaic" texturisations to the ground and the sky and colored in areas where need be with the paint tool. I used adobe color to pinpoint the correct hues from the source image.  </p>
+
+    <img src="adobeilllustratedenvironment.png" alt="Illustrated Environment" width="600">
+        <br>
+        <p> Reference image: </p>
+      <img src="adobeilllustratedenvironmentref.png" alt="Homework 6 Image" width="600">
+
+    <br><br>
+
+    <a href="index.html">Back to Home</a>
+    <br>
+     
+         
+         <script>
+      $('.hw2-btn').click(function(event){
+        event.preventDefault(); 
+        $('nav ul .hw2-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+          });
+      
+       $('.hw3-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw3-show').toggleClass("show");
+          $('nav ul .second').toggleClass("rotate");
+           });
+       $('.hw4-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw4-show').toggleClass("show");
+          $('nav ul .third').toggleClass("rotate");
+            });
+
+      $('nav ul li').click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+  </body>
+
+</html>
+
      
