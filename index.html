@@ -48,7 +48,7 @@
       <li><a href="hw5.html">Homework 5</a></li>
       <li><a href="hw6.html">Homework 6</a></li>
      <li><a href = "hw7.html">Homework 7</a></li>
-     <li><a href="#" class = "hw2-btn">Homework 8
+     <li><a href="#" class = "hw8-btn">Homework 8
        <span class = "fas fa-caret-down fourth"></span>
      </a>
      <ul class="hw8-show">
@@ -90,6 +90,12 @@
          $('nav ul .hw4-show').toggleClass("show");
           $('nav ul .third').toggleClass("rotate");
             });
+ $('.hw8-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw8-show').toggleClass("show");
+          $('nav ul .fourth').toggleClass("rotate");
+            });
+
 
       $('nav ul li').click(function(){
       $(this).addClass("active").siblings().removeClass("active");
