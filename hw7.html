@@ -1,3 +1,4 @@
+
 <!doctype html>
 
 <html lang="en" dir="ltr">
@@ -15,9 +16,12 @@
    <div id="container">
     <nav class = "sidebar" >
       <div class = "text">Index</div>
+      
    <ul>
      <li><a href="index.html">Home</a></li>
+     
      <li><a href="reflections.html">Reflections</a></li>
+     
      <li><a href="#" class = "hw2-btn">Homework 2
        <span class = "fas fa-caret-down first"></span>
      </a>
@@ -26,6 +30,8 @@
           <li><a href="homework2-image2.html">Image 2</a></li>
      </ul>
      </li>
+
+     
      <li><a href="#" class = "hw3-btn"> Homework 3 
         <span class = "fas fa-caret-down second"></span>
      </a>
@@ -37,6 +43,7 @@
      <li><a href="hw3_image5.html">Image 5</a></li>
     </ul>
      </li>
+     
   <li> <a href="#" class = "hw4-btn"> Homework 4
    <span class = "fas fa-caret-down third"></span>
   </a>
@@ -45,17 +52,22 @@
       <li><a href="hw4_image2.html">Image 2</a></li>
     </ul>
   </li>
+     
       <li><a href="hw5.html">Homework 5</a></li>
       <li><a href="hw6.html">Homework 6</a></li>
      <li><a href = "hw7.html">Homework 7</a></li>
-     <li><a href="#" class = "hw2-btn">Homework 8
+     
+     <li><a href="#" class = "hw8-btn">Homework 8
        <span class = "fas fa-caret-down fourth"></span>
      </a>
      <ul class="hw8-show">
        <li><a href="hw8_gif1.html">Gif 1</a></li>
           <li><a href="hw8_gif2.html">Gif 2</a></li>
      </ul>
-     </li>
+   </li>
+
+     <li><a href="hw9.html">Homework 9</a></li>
+
    </ul>
       
         </nav>
@@ -95,6 +107,12 @@
          $('nav ul .hw4-show').toggleClass("show");
           $('nav ul .third').toggleClass("rotate");
             });
+           $('.hw8-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw8-show').toggleClass("show");
+          $('nav ul .fourth').toggleClass("rotate");
+            });
+
 
       $('nav ul li').click(function(){
       $(this).addClass("active").siblings().removeClass("active");
