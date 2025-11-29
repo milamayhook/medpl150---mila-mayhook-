@@ -71,3 +71,53 @@
       
         </nav>
 
+
+      <main class="content">
+    <header>
+       <span>Homework 9</span>
+         </header>
+
+    <p> ... </p>
+
+   
+
+      
+
+    <br><br>
+
+    <a href="index.html">Back to Home</a>
+    <br>
+     
+         
+         <script>
+      $('.hw2-btn').click(function(event){
+        event.preventDefault(); 
+        $('nav ul .hw2-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+          });
+      
+       $('.hw3-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw3-show').toggleClass("show");
+          $('nav ul .second').toggleClass("rotate");
+           });
+       $('.hw4-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw4-show').toggleClass("show");
+          $('nav ul .third').toggleClass("rotate");
+            });
+           $('.hw8-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw8-show').toggleClass("show");
+          $('nav ul .fourth').toggleClass("rotate");
+            });
+
+
+      $('nav ul li').click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+  </body>
+
+</html>
