@@ -151,6 +151,9 @@ nav ul .hw3-show.show{
 nav ul .hw4-show.show{
   display: block; }
 
+nav ul .hw8-show.show{
+	display: block; }
+
 nav ul ul li {
   line-height: 42px;
   border-bottom: none;
