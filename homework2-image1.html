@@ -104,6 +104,12 @@
          $('nav ul .hw4-show').toggleClass("show");
           $('nav ul .third').toggleClass("rotate");
             });
+           $('.hw8-btn').click(function(event){
+         event.preventDefault(); 
+         $('nav ul .hw8-show').toggleClass("show");
+          $('nav ul .fourth').toggleClass("rotate");
+            });
+
 
       $('nav ul li').click(function(){
       $(this).addClass("active").siblings().removeClass("active");
